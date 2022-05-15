@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.assignment.marktalentitunes.R
 import com.assignment.marktalentitunes.model.SongListing
+import com.squareup.picasso.Picasso
 
 class SongAdapter(private val list: List<SongListing>)
     : RecyclerView.Adapter<SongAdapter.SongViewHolder>() {

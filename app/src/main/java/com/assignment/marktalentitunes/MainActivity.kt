@@ -21,19 +21,26 @@ class MainActivity : AppCompatActivity() {
         viewPager = findViewById(R.id.viewPager)
         viewPager.adapter = PagerAdapter(this)
         TabLayoutMediator(tabLayout, viewPager) { tab, index ->
-            tab.text = when(index){
-                0 -> {"FIRST"}
-                1 -> {"SECOND"}
-                2 -> {"THIRD"}
-                else -> {throw Resources.NotFoundException("Position Not Found")}
-
+            tab.text = when (index) {
+                0 -> {
+                    "FIRST"
+                }
+                1 -> {
+                    "SECOND"
+                }
+                2 -> {
+                    "THIRD"
+                }
+                else -> {
+                    throw Resources.NotFoundException("Position Not Found")
+                }
 
 
             }
-
 
 
         }.attach()
 
 
     }
+}
